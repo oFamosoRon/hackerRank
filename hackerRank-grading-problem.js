@@ -21,7 +21,7 @@ function gradingStudents(grades) {
 
   var finalGrades = [];
 
-  grades.forEach(function (item) {
+  grades.forEach((item) => {
     if (item < 38) {
       finalGrades.push(item);
     } else {
