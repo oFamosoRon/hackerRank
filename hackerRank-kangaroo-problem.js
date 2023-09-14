@@ -30,13 +30,9 @@ function kangaroo(x1, v1, x2, v2) {
   return result;
 }
 
-function main() {
-  x1 = 0;
-  v1 = 3;
-  x2 = 4;
-  v2 = 2;
+x1 = 0;
+v1 = 3;
+x2 = 4;
+v2 = 2;
 
-  kangaroo(x1, v1, x2, v2);
-}
-
-main();
+kangaroo(x1, v1, x2, v2);

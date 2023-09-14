@@ -40,10 +40,6 @@ function gradingStudents(grades) {
   return finalGrades;
 }
 
-function main() {
-  let grades = [4, 73, 67, 38, 33];
+let grades = [4, 73, 67, 38, 33];
 
-  console.log(gradingStudents(grades));
-}
-
-main();
+console.log(gradingStudents(grades));

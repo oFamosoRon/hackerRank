@@ -25,9 +25,7 @@ function breakingRecords(scores) {
   return [breakHighRecord, breakLeastRecord];
 }
 
-function main() {
-  let scores = [10, 5, 20, 20, 4, 5, 2, 25, 1];
-  console.log(breakingRecords(scores));
-}
+let scores = [10, 5, 20, 20, 4, 5, 2, 25, 1];
+console.log(breakingRecords(scores));
 
 main();

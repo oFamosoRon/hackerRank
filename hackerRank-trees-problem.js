@@ -24,24 +24,24 @@ function countApplesAndOranges(s, t, a, b, apples, oranges) {
     return;
   }
 
-  let fallenApplePositions = apples.map(function (item) {
+  let fallenApplePositions = apples.map((item) => {
     return item + a;
   });
 
-  let fallenOrangePositions = oranges.map(function (item) {
+  let fallenOrangePositions = oranges.map((item) => {
     return item + b;
   });
 
   let applesFallenInRange = 0;
   let orangesFallenInRange = 0;
 
-  fallenApplePositions.forEach(function (item) {
+  fallenApplePositions.forEach((item) => {
     if (item >= s && item <= t) {
       applesFallenInRange++;
     }
   });
 
-  fallenOrangePositions.forEach(function (item) {
+  fallenOrangePositions.forEach((item) => {
     if (item >= s && item <= t) {
       orangesFallenInRange++;
     }
@@ -51,17 +51,12 @@ function countApplesAndOranges(s, t, a, b, apples, oranges) {
   console.log(orangesFallenInRange);
 }
 
-function main() {
-  let s = 7;
-  let t = 10;
+let s = 7;
+let t = 10;
 
-  let a = 4;
-  let b = 12;
+let a = 4;
+let b = 12;
 
-  let apples = [2, 3, -4];
-  oranges = [3, -2, -4];
-
-  countApplesAndOranges(s, t, a, b, apples, oranges);
-}
-
-main();
+let apples = [2, 3, -4];
+oranges = [3, -2, -4];
+countApplesAndOranges(s, t, a, b, apples, oranges);
